@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.Proiect_in_Java.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <ListView fx:id="listViewPiese"/>
+    <HBox>
+        <VBox>
+            <Label fx:id="labelId">Piesa Id</Label>
+            <TextField fx:id="textFieldPieseId"/>
+        </VBox>
+        <VBox>
+            <Label fx:id="labelFormatie">Piesa Formatie</Label>
+            <TextField fx:id="textFieldPieseFormatie"/>
+        </VBox>
+        <VBox>
+            <Label fx:id="labelTitlu">Piesa Titlu</Label>
+            <TextField fx:id="textFieldPieseTitlu"/>
+        </VBox>
+        <VBox>
+            <Label fx:id="labelGen">Piesa Gen </Label>
+            <TextField fx:id="textFieldPieseGen"/>
+        </VBox>
+        <VBox>
+            <Label fx:id="labelDurata">Piesa Durata</Label>
+            <TextField fx:id="textFieldPieseDurata"/>
+        </VBox>
+        <VBox>
+            <Label fx:id="labelSearch">Search</Label>
+            <TextField fx:id="textFieldSearch"/>
+        </VBox>
+    </HBox>
+    <HBox>
+        <Button fx:id="buttonAdd" onAction="#onAddButtonClicked">Adauga piesa</Button>
+        <Button fx:id="buttonUpdate" onAction="#onUpdateButtonClicked">Actualizeaza</Button>
+        <Button fx:id="buttonFiltru" onAction="#onFiltru">Filtrare</Button>
+        <Button fx:id="buttonreset" onAction="#onReset">Resetare</Button>
+
+    </HBox>
+</VBox>
